@@ -1,0 +1,447 @@
+:root
+{
+	--blue: #00264d;
+	--yellow:gold;
+}
+
+body
+{
+	font-family: arial;
+}
+
+*
+{
+	border: 0;
+	outline: 0;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+
+header
+{
+	z-index: 20000000000000000000;
+	color: white;
+	/*background: red;*/
+	position: fixed;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background:var(--blue);
+}
+header div
+{
+	padding: 10px;
+}
+header a
+{
+	color: silver;
+	padding: 10px;
+	border: 2px solid transparent;
+}
+header a:hover
+{
+	color: white;
+}
+header button
+{
+	padding: 10px 40px;
+	border-radius: 100px;
+	border: 2px solid var(--yellow);
+	background:transparent;
+	color: white;
+
+}
+
+.banner
+{
+	background: var(--blue);
+	padding: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;	
+}
+.banner .left
+{
+	width: 50%;
+	padding:10% 1%;
+	color: white;
+}
+.banner .left h1
+{
+	font-size: 44px;
+}
+.banner .left h2
+{
+	font-size: 23px;
+}
+.banner .left button
+{
+	padding: 10px 40px;
+	margin-top: 20px;
+	border-radius: 100px;
+	border: 2px solid var(--yellow);
+	background: var(--yellow);
+	font-size: 21px;
+}
+.banner .left button:hover
+{
+	background: transparent;
+	color: white;
+}
+.banner .right
+{
+	width: 50%;
+}
+.banner .right img
+{
+	width: 100%;
+}	
+
+.clients
+{
+	display: flex;
+	padding: 2%;
+}
+.clients div
+{
+	padding:0 5%;
+}
+.clients div img
+{
+	width: 100%;
+}
+
+.section1
+{
+	background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
+	padding: 5%;
+	display: flex;
+}
+.section1 .left
+{
+	width: 50%;
+}
+.section1 .left img
+{
+	width: 100%;	
+}
+.section1 .right
+{
+	width: 50%;
+	margin-left: 5%;
+
+}
+.section1 .right .flex
+{	
+	display: flex;
+	flex-flow: wrap;
+}
+.section1 .right .flex .item
+{
+	width: 45%;
+	margin: 1%;
+	display: flex;
+}
+.section1 .right .flex .item .l
+{
+	margin-right: 10px;
+}
+.section1 .right .flex .item .l .fa
+{
+	color: gold;
+}
+.section1 .right .flex .item .r
+{
+
+}
+.section1 .right .flex .item .r h4
+{
+	font-size: 20px;
+	margin-bottom: 7px;
+}
+.section1 .right .flex .item .r p
+{
+	color: grey;
+}
+
+
+.services
+{
+	padding: 5%;
+	background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
+}
+.services .flex
+{
+	display: flex;
+	flex-flow: wrap;
+}
+.services .flex .item
+{
+	width: 45%;
+	margin: 2.5%;
+}
+.services .flex .item .upper
+{
+	background: red;
+	overflow: hidden;
+}
+.services .flex .item .upper img
+{
+	width: 100%;	
+	transition: 1s;
+}
+.services .flex .item:hover .upper img
+{
+	transform: scale(1.2);
+}
+.services .flex .item .lower
+{
+	padding: 0 10%;
+}
+.services .flex .item .lower .inner
+{
+	background: white;
+	box-shadow: 0 10px 10px silver;
+	padding: 5%;
+	transform: translateY(-50px);
+}
+.services .flex .item .lower .inner h5
+{
+
+}
+.services .flex .item .lower .inner p
+{
+
+}
+.services .flex .item .lower .inner a
+{
+	font-size: 10px;
+	color: grey;
+}
+
+.portfolio
+{
+	padding: 5%;
+	background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
+}
+
+.portfolio .tabs
+{
+	padding: 2%;
+}
+.portfolio .tabs a
+{
+	color: black;
+	padding: 10px;
+}
+.portfolio .flex{
+	display: flex;
+	flex-flow: wrap;
+}
+.portfolio .flex .item{
+	width: 30%;margin: 1.5%;
+}
+.portfolio .flex .item img{
+	width: 100%;
+}
+
+
+
+.team
+{
+	padding: 5%;
+	background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);	
+	text-align: center;
+}
+.team .flex
+{
+	display: flex;
+}
+.team .flex .item
+{	
+	width: 23%;
+	margin: 1%;
+	font-size: 90%;
+}
+.team .flex .item img
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.team .flex .item .fa
+{
+	color: grey;
+}
+
+
+.pricing
+{
+	padding: 5%;
+	background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);	
+	text-align: center;
+}
+.pricing .flex
+{
+	display: flex;
+	margin-top:100px;	
+}
+.pricing .flex .item
+{
+	box-shadow: 0 0 10px silver;
+	width: 33.3%;
+	margin: 0;
+	background: white;
+	padding: 5%;
+}
+.pricing .flex .item.large
+{
+	transform: scale(1.1);
+}
+.pricing .flex .item big
+{
+	color: var(--yellow);
+	font-size: 55px;
+}
+.pricing .flex .item small
+{
+	color: grey;
+}
+.pricing .flex .item button
+{
+
+}
+.pricing .flex .item li
+{
+	line-height: 50px;
+}
+.pricing .flex .item .active .fa
+{
+	color: gold;
+}
+.pricing .flex .item .del .fa
+{
+	color: grey;
+}
+
+.contact
+{
+	background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
+	padding: 5%;
+	text-align: center;
+}
+.contact .flex
+{
+	display: flex;
+	align-items: center;
+}
+.contact .flex .left
+{
+	width: 50%;
+	padding: 5%;
+}
+.contact .flex .left .upper
+{	
+	background: white;
+	box-shadow: 0 0 10px silver;
+	padding: 5%;
+}
+.contact .flex .left .lower
+{
+	display: flex;
+}
+.contact .flex .left .lower .item
+{
+	margin: 2%;
+	padding: 5%;
+	background: white;
+	box-shadow: 0 0 10px silver;
+}
+.contact .flex  .fa
+{
+	color: gold;
+}
+.contact .flex .right
+{
+
+	padding: 5%;
+	width: 50%;
+	background: white;
+}
+.contact .flex .right input
+{
+	width: 45%;
+	padding: 10px;
+	background: #f1f1f1;
+	margin: 10px;
+}
+.contact .flex .right .lg
+{
+	width: 94%;
+}
+.contact .flex .right button
+{
+	padding: 10px 40px;
+	background: gold;
+	color: white;
+	border-radius: 100px;
+	margin-top: 20px;
+}
+
+
+
+.footer
+{
+	padding: 5%;
+	background: var(--blue);
+	color: white;
+	text-align: center;
+}
+
+.footer .flex
+{
+	display: flex;
+	align-items: center;
+	background: white;
+	width: 30%;
+	margin: auto;
+	padding: 0 10px;
+	border-radius: 100px;
+}
+
+.footer .flex button
+{
+	background: gold;
+	color: white;
+	padding: 10px 50px;
+	border-radius: 100px;
+}
+
+
+
+
+.footer .line
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
